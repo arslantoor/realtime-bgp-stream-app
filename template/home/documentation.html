@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>BGP Stream</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+</head>
+<style>
+    #container {
+        min-width: 310px;
+        max-width: 1200px;
+        height: 600px;
+        margin: 0 auto;
+
+    }
+
+    h1 {
+        font-size: 2vw;
+        font-weight: bolder;
+        font-family: system-ui;
+    }
+    h2 {
+        font-size: 1vw;
+        font-weight: bolder;
+        font-family: system-ui;
+    }
+</style>
+
+<body>
+    {% include 'layout/navbar.html' %}
+    <main role="main" class=" container col-md-12 ml-sm-auto col-lg-12 pt-3 px-4">
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom text-centers">
+            <h1 class="text-center"> Documentation</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>BGP BLACKVT Framework</h2>
+                <p>
+                    BGP BLACKVT Framework is a framework for the analysis of BGP data.</p>
+            </div>
+        </div>
+        <div class="card mt-2">
+            <div class="card-body">
+                <h2>BGP BLACKVT Tutorial</h2>
+                <p>
+                    BGP BLACKVT Framework is a framework for the analysis of BGP data.</p>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'js/socket_script.js' %}"></script>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{%  static 'js / vendor / jquery - slim.min.js' %}"><\/script>')</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+
+    <!-- Live bar chart with high chart -->
+</body>
+
+</html>

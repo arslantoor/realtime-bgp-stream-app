@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>BGP Stream</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+</head>
+<style>
+    #container {
+        min-width: 310px;
+        max-width: 1200px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    h1.h1.fw-800.p-2 {
+        font-size: 5vw;
+        font-weight: bolder;
+        font-family: system-ui;
+    }
+
+    p.fw-bold {
+        font-size: 185%;
+        font-weight: bold;
+        font-family: system-ui;
+        text-transform: capitalize;
+    }
+main.container-fluid.my-2.pb-2 {
+    position: absolute;
+    top: 20%;
+}
+</style>
+
+<body class="">
+    {% include 'layout/navbar.html' %}
+
+    <main role="main" class="container-fluid my-2 pb-2">
+        <div class="align-items-center pb-2 mb-3 border-bottom text-center mb-5">
+            <h1 class="h1 fw-800 p-2">BGP BLACKVT</h1>
+            <p class=" fw-bold "> A realtime BGP Activity Visualizations tool.</p>
+            <div class="btn-toolbar mb-2 mb-md-0">
+
+            </div>
+
+        </div>
+        
+        <div class="container-fluid d-flex justify-content-center align-self-baseline">
+            <div class="card " style="width: 30rem;height: 18rem;"">
+                <div class="card-body bg-dark text-light">
+                     
+                    <p class="card-text">Why BGP Activity visualization?
+
+                        Monitoring is essential element of network. Monitoring is essential element of network.
+                        Monitoring is essential element of network</p>
+
+                </div>
+            </div>
+
+            <div class="card text-center" style="width: 30rem;height: 18rem;"">
+                <div class="card-body bg-dark text-light">
+                     
+                    <p class="card-text">Getting started with Tutorial:
+
+                        Learn what you can see</p>
+                    <a href="/documentation" class="btn btn-primary">Documentation</a>
+                </div>
+            </div>
+
+            <div class="card text-right bg-dark text-light" style="width: 30rem;height: 18rem;"">
+                <div class="card-body">
+                     
+                    <p class="card-text">Real time visualizations: Easily monitor & visualize current status of network
+                        activity </p>
+                    <a href="/ripe" class="btn btn-primary">Visualizations</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{% static 'js/socket_script.js' %}"></script>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{%  static 'js / vendor / jquery - slim.min.js' %}"><\/script>')</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+
+    <!-- Live bar chart with high chart -->
+</body>
+
+</html>
